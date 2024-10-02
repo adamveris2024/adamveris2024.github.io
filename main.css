@@ -1,4 +1,18 @@
 table {
-    border: 1;
-    width: 5;
+    border: 1.5px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1.5px solid black;
+    text-align: right;
+    padding: 5px;
+}
+tbody, td {
+    background-color: white;
+}
+thead {
+    background-color: rgb(107, 255, 107);
+}
+body {
+    background-color: rgb(255, 255, 165);
 }
