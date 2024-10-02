@@ -16,3 +16,22 @@ thead {
 body {
     background-color: rgb(255, 255, 165);
 }
+
+a {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid rgb(30, 35, 0); 
+    transition: all 0.3s ease;
+    background-color: rgb(255, 255, 110);
+}
+
+a:hover {
+    background-color: rgb(185, 179, 85);
+    color: rgb(225, 255, 0);
+}
+
+h2 {
+    font-size: 22.3px
+}
