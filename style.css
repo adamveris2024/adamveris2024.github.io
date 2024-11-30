@@ -1,3 +1,7 @@
+/* this is the import url to utilize the fonts I chose */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 .page-wrapper {
 	display: grid;
 	grid-template-columns: 1/4fr, 2/3fr, 1/4fr; /* These are the fractional values that determine how big each column will be */
@@ -5,6 +9,22 @@
 	padding-right: 20px; /* this gives a bit of spacing between the elements to make it look better */
 }
 
+/* I added this margin to give more spacing between elements, to make it generally look cleaner */
 #zen-intro, #zen-supporting, .sidebar {
     margin-right: 30px;
+}
+
+/* I chose a different font than the same font I used for everything else because I wanted the header to stand out. */
+h1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+/* I chose this font because it appears more professional than a lot of fonts I saw on Google Fonts */
+body {
+    font-family: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
 }
