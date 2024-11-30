@@ -1,0 +1,10 @@
+.page-wrapper {
+	display: grid;
+	grid-template-columns: 1/4fr, 2/3fr, 1/4fr; /* These are the fractional values that determine how big each column will be */
+	grid-template-areas: "nav section aside"; /* This is assigning each of the fractional values to the corresponding element */
+	padding-right: 20px; /* this gives a bit of spacing between the elements to make it look better */
+}
+
+#zen-intro, #zen-supporting, .sidebar {
+    margin-right: 30px;
+}
