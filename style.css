@@ -6,12 +6,15 @@
 	display: grid;
 	grid-template-columns: 1/4fr, 2/3fr, 1/4fr; /* These are the fractional values that determine how big each column will be */
 	grid-template-areas: "nav section aside"; /* This is assigning each of the fractional values to the corresponding element */
-	padding-right: 20px; /* this gives a bit of spacing between the elements to make it look better */
 }
 
 /* I added this margin to give more spacing between elements, to make it generally look cleaner */
 #zen-intro, #zen-supporting, .sidebar {
     margin-right: 30px;
+}
+
+#zen-intro {
+    margin-left: 30px;
 }
 
 /* I chose a different font than the same font I used for everything else because I wanted the header to stand out. */
@@ -20,7 +23,7 @@ h1 {
     font-weight: 800;
     font-style: normal;
     font-size: xx-large;
-    color:rgb(207, 169, 0)
+    color:rgb(207, 169, 0) /* I used this yellow because it compliments the navy blue I used for the background */
 }
 
 /* I chose this font because it appears more professional than a lot of fonts I saw on Google Fonts */
@@ -28,18 +31,19 @@ body {
     font-family: "PT Serif", serif;
     font-weight: 400;
     font-style: normal;
-    background: linear-gradient(rgb(0, 0, 83), rgb(4, 4, 216));
-    color: rgba(255, 255, 255, 0.759);
+    background: linear-gradient(rgb(0, 0, 83), rgb(4, 4, 216)); /* This gives a fade design in the background that makes it pop more than just a basic color background */
+    color: rgba(255, 255, 255, 0.759); /* I changed this from white to look a little easier on the eyes, I thought the white popped too much */
+    margin-bottom: 30px; /* This gives a little spacing on the bottom to fit the spacing on the left, right, top, and bottom  */
 }
 
-/* this line is affecting every first letter in any h3 element. It makes it a little bigger to make them stand out. */
+/* this line is affecting every first letter in any h3 element. It makes it a little bigger to make them stand out and makes it bold. */
 h3::first-letter {
     font-size: 25px;
     font-weight: bold;
 }
 
 a {
-    color: rgb(207, 169, 0);
+    color: rgb(207, 169, 0); /* I used this yellow because it compliments the navy blue I used for the background */
 }
 
 /* This line affects every <a></a> by making it so whenever you hover your mouse over it, the color changes */
@@ -48,6 +52,7 @@ a:hover {
 }
 
 p {
-    text-indent: 1em;
-    font-size: 17px;
+    text-indent: 1em; /* Text indent creates an indent at the beginning of any paragraph element to make it look like a more proper paragraph */
+    font-size: 17px; /* The default size was a little too small, so I changed the size to make it a little easier to see */
 }
+
