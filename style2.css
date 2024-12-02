@@ -1,3 +1,30 @@
-.page-wrapper {
-    
+#zen-intro {
+    float: left; /* Float will make an element float along a line next to one another */
+    width: 25%; /* Setting the width is important because if its not set than the elements might not fit next to each other */ 
+    margin-left: 30px;
+    margin-right: 30px;
 }
+
+.sidebar {
+    float: left;
+    width: 25%;
+    margin-left: 30px;
+}
+
+#zen-supporting {
+    float: left;
+    width: 37%;
+    height: 90%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+body {
+    background: radial-gradient(black, red);
+    color: white;
+}
+
+a {
+    color: rgb(4, 214, 4);
+}
+
