@@ -1,22 +1,34 @@
+
 #zen-intro {
     float: left; /* Float will make an element float along a line next to one another */
     width: 25%; /* Setting the width is important because if its not set than the elements might not fit next to each other */ 
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px; /* I added the padding to give a space between the element and the border */
+    padding-right: 15px;
+    border: 2px dotted; /* this just adds a simple border around the element*/
 }
 
 .sidebar {
     float: left;
     width: 25%;
-    margin-left: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    margin-bottom: 30px;
+    padding-right: 15px;
+    border: 2px dotted;
 }
 
 #zen-supporting {
-    float: left;
-    width: 37%;
-    height: 90%;
-    margin-left: 30px;
-    margin-right: 30px;
+    float: right;
+    width: 65%;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border: 2px solid;
 }
 
 body {
@@ -28,3 +40,17 @@ a {
     color: rgb(4, 214, 4);
 }
 
+a:hover {
+    color: rgb(224, 0, 224);
+}
+
+h1 {
+    font-size: xx-large;
+    border-bottom: dotted 2px;
+    padding-bottom: 15px;
+}
+
+h3 {
+    border-bottom: solid 2px;
+    padding-bottom: 15px;
+}
