@@ -22,3 +22,19 @@ const winningCombinations = [
 function updateTurnDisplay() {
     document.getElementById('turn').textContent = `Player ${currentPlayer}'s Turn`;
   }
+
+  // this function is checking which player won
+function checkWinner() {
+    for (let combination of winningCombinations) {
+      const [a, b, c] = combination;
+      if (gameBoard[a] && gameBoard[a] === gameBoard[b] && gameBoard[a] === gameBoard[c]) {
+        return gameBoard[a]; // returns 'X' or 'O' as the winner
+      }
+    }
+
+    // Checks for a tie if none of the squares are empty and there's no winner
+  if (!gameBoard.includes('')) {
+    return 'Tie';
+  }
+  return null; // No winner has been decided yet
+}
