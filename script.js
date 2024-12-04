@@ -69,3 +69,16 @@ function updateScoreboard() {
     document.getElementById('scoreboard-x').textContent = xWins;
     document.getElementById('scoreboard-o').textContent = oWins;
   }
+
+// this functions lets you reset the game
+function resetGame() {
+    gameBoard = ['', '', '', '', '', '', '', '', ''];
+    gameActive = true;
+    currentPlayer = 'X'; // this makes it so even when the game is reset X is the first player
+    updateTurnDisplay();
+
+      // this line clears the game board ui
+  for (let i = 0; i < 9; i++) {
+    document.getElementById(`square-${i}`).textContent = '';
+  }
+}
