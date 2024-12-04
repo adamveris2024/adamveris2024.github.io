@@ -18,3 +18,7 @@ const winningCombinations = [
     [2, 4, 6] // box 3, 5, and 7 to win
   ];
   
+  // this function will display which player's turn it is
+function updateTurnDisplay() {
+    document.getElementById('turn').textContent = `Player ${currentPlayer}'s Turn`;
+  }
