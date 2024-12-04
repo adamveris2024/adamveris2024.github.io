@@ -93,3 +93,11 @@ document.querySelectorAll('.game-square').forEach((square, index) => {
   
   // Initialize the game
   updateTurnDisplay();
+
+// this line loads the scores from localStorage (you want this to execute first so its on top)
+function loadScores() {
+    xWins = localStorage.getItem('xWins') ? parseInt(localStorage.getItem('xWins')) : 0;
+    oWins = localStorage.getItem('oWins') ? parseInt(localStorage.getItem('oWins')) : 0;
+    ties = localStorage.getItem('ties') ? parseInt(localStorage.getItem('ties')) : 0;
+    updateScoreboard();
+  }
