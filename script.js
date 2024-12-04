@@ -101,3 +101,10 @@ function loadScores() {
     ties = localStorage.getItem('ties') ? parseInt(localStorage.getItem('ties')) : 0;
     updateScoreboard();
   }
+
+// this line saves the scores to localStorage
+function saveScores() {
+    localStorage.setItem('xWins', xWins);
+    localStorage.setItem('oWins', oWins);
+    localStorage.setItem('ties', ties);
+  }
