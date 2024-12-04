@@ -63,4 +63,9 @@ function handleSquareClick(index) {
       updateTurnDisplay();
     }
   }
-  
+
+// this function updates the scoreboard
+function updateScoreboard() {
+    document.getElementById('scoreboard-x').textContent = xWins;
+    document.getElementById('scoreboard-o').textContent = oWins;
+  }
