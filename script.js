@@ -82,3 +82,14 @@ function resetGame() {
     document.getElementById(`square-${i}`).textContent = '';
   }
 }
+
+// this line adds event listeners for each square
+document.querySelectorAll('.game-square').forEach((square, index) => {
+    square.addEventListener('click', () => handleSquareClick(index));
+  });
+  
+  // this line adds an event listener to the play again button
+  document.getElementById('button-play-again').addEventListener('click', resetGame);
+  
+  // Initialize the game
+  updateTurnDisplay();
