@@ -41,7 +41,7 @@ function checkWinner() {
 
 // Handle square click
 function handleSquareClick(index) {
-    if (!gameActive || gameBoard[index] !== '') return; // Don't do anything if the game is over or the square is taken
+    if (!gameActive || gameBoard[index] !== '') return; // doesn't do anything if the game is over or the square is taken
   
     gameBoard[index] = currentPlayer; // this marks the square with the current player's symbol
     document.getElementById(`square-${index}`).textContent = currentPlayer; // this updates the square's ui
@@ -108,3 +108,13 @@ function saveScores() {
     localStorage.setItem('oWins', oWins);
     localStorage.setItem('ties', ties);
   }
+
+// this line updates the scoreboard and saves scores
+function updateScoreboard() {
+    document.getElementById('scoreboard-x').textContent = xWins;
+    document.getElementById('scoreboard-o').textContent = oWins;
+    saveScores();
+}
+
+// Call loadScores on page load
+loadScores();
