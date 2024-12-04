@@ -38,3 +38,29 @@ function checkWinner() {
   }
   return null; // No winner has been decided yet
 }
+
+// Handle square click
+function handleSquareClick(index) {
+    if (!gameActive || gameBoard[index] !== '') return; // Don't do anything if the game is over or the square is taken
+  
+    gameBoard[index] = currentPlayer; // this marks the square with the current player's symbol
+    document.getElementById(`square-${index}`).textContent = currentPlayer; // this updates the square's ui
+  
+    const winner = checkWinner(); // this checks if there's a winner
+    if (winner) {
+      gameActive = false;
+      if (winner === 'Tie') {
+        alert('It\'s a tie!');
+        ties++;
+      } else {
+        alert(`${winner} wins!`);
+        winner === 'X' ? xWins++ : oWins++; // this adds a 1 to either X or O for the score
+      }
+      updateScoreboard(); // this updates the score board
+    } else {
+      // this line switches the turns
+      currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+      updateTurnDisplay();
+    }
+  }
+  
